@@ -42,7 +42,7 @@ func checkStatus(ep string) error {
 	}
 
 	if string(b) != "ok" {
-		return fmt.Errorf("not ok")
+		return fmt.Errorf("got '%s'", string(b))
 	}
 	return nil
 }
